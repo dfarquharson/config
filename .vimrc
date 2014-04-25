@@ -17,6 +17,7 @@ set expandtab
 nnoremap ; :
 command! Q q
 filetype plugin indent on
+autocmd FileType make setlocal noexpandtab
 
 map <C-p> :tabprevious<Enter>
 map <C-n> :tabnext<Enter>
