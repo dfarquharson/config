@@ -4,6 +4,12 @@
 (setq mac-option-modifier 'meta)
 
 ;; general editor settings
+(setq display-time-day-and-date t
+      display-time-24hr-format t)
+(display-time)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'indent-tab)
 (global-linum-mode t)
 (setq column-number-mode t)
 (menu-bar-mode -1)
@@ -21,3 +27,7 @@
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
+
+;; custom key-maps
+(define-key global-map [f5] 'toggle-truncate-lines)
+(define-key global-map [f6] 'goto-line)
