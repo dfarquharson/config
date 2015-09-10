@@ -45,4 +45,4 @@ bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
 #prompt
-PS1="$txtgrn[\d \t \u@\h:\w]$txtrst\n> "
+PS1="\[\e[0;30;47m\][\d \t \u@\h:\w]$txtrst\n> "
