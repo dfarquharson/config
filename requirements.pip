@@ -1,0 +1,6 @@
+boto3
+ipython
+pep8
+pytest-watch
+requests
+toolz
